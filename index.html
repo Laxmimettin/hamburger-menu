@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar | Laxmi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo"><span>&lt;/&gt;</span> Laxmi<span class="dot">.</span></a>
+
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="overlay" id="overlay"></div>
+
+            <div class="nav-menu" id="nav-menu">
+                <div class="mobile-header">
+                    <a href="#home" class="logo"><span>&lt;/&gt;</span> Laxmi<span class="dot">.</span></a>
+                    <button class="close-btn" id="close-btn" aria-label="Close menu">&times;</button>
+                </div>
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <a href="#contact" class="cta mobile-cta">Let's Talk ↗</a>
+            </div>
+
+            <a href="#contact" class="cta desktop-cta">Let's Talk ↗</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tag"><span></span> WELCOME TO MY DIGITAL SPACE</p>
+
+                <h1>Design. Develop.<br><span>Create.</span></h1>
+
+                <p class="description">
+                    Creating modern, responsive and beautiful web experiences
+                    using HTML, CSS and JavaScript.
+                </p>
+
+                <div class="buttons">
+                    <a href="#projects" class="primary-btn">Explore Projects ↗</a>
+                    <a href="#contact" class="secondary-btn">Contact Me</a>
+                </div>
+
+                <p class="availability">
+                    <span class="green-dot"></span>
+                    Always learning. Always building.
+                </p>
+            </div>
+
+            <div class="visual">
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+
+                <div class="code-card">
+                    <div class="card-header">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <p>my-project.js</p>
+                        <span>•••</span>
+                    </div>
+
+                    <div class="code">
+                        <p><span class="number">01</span> <span class="purple">const</span> <span
+                                class="blue">developer</span> = {</p>
+                        <p class="indent"><span class="green">name</span>: "Laxmi",</p>
+                        <p class="indent"><span class="green">passion</span>: "Web Development",</p>
+                        <p class="indent"><span class="green">skills</span>: ["HTML", "CSS", "JS"]</p>
+                        <p>};</p>
+                        <br>
+                        <p><span class="number">07</span> <span class="purple">function</span> <span
+                                class="blue">createMagic</span>() {</p>
+                        <p class="indent glow">buildAmazingProjects();</p>
+                        <p>}</p>
+                    </div>
+                </div>
+
+                <div class="floating-card top-card">✦ &nbsp; Creative Ideas</div>
+                <div class="floating-card bottom-card">⌘ &nbsp; Clean Code</div>
+            </div>
+        </section>
+
+        <section class="intro section" id="about">
+            <div class="intro-icon">✦</div>
+            <div>
+                <h2>Beautiful on every screen.</h2>
+                <p>This navbar automatically adapts to desktops, tablets and mobile phones.</p>
+            </div>
+        </section>
+
+        <section class="features section" id="services">
+            <p class="section-tag">WHAT MAKES IT SPECIAL</p>
+            <h2>Simple details. <span>Big impact.</span></h2>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon blue-icon">▦</div>
+                    <h3>Responsive Design</h3>
+                    <p>A flexible layout that looks great on every device.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon purple-icon">↔</div>
+                    <h3>Smooth Animation</h3>
+                    <p>Elegant transitions for opening and closing the menu.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon green-icon">✓</div>
+                    <h3>Easy Navigation</h3>
+                    <p>Simple links and accessible interactive controls.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="projects">
+            <div>
+                <p class="section-tag">LET'S BUILD SOMETHING</p>
+                <h2>Ideas become <span>reality.</span></h2>
+            </div>
+            <a href="#contact" class="primary-btn">Get Started ↗</a>
+        </section>
+
+        <section class="contact-message" id="contact">
+            <span class="green-dot"></span>
+            Thanks for visiting! Let's create something amazing.
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo"><span>&lt;/&gt;</span> Laxmi<span class="dot">.</span></a>
+        <p>Designed with creativity. Built with code.</p>
+        <p>© <span id="year"></span> Laxmi</p>
+    </footer>
+
+</body>
+
+</html>
